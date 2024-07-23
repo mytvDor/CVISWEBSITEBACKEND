@@ -16,7 +16,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 // app.use(express.json());
 mongoose
-  .connect("mongodb://localhost:27017/cvisfeed")
+  .connect("mongodb+srv://sumitdhonde0:OP3ZFh4RtwEm1RdJ@cluster100.recamce.mongodb.net/?retryWrites=true&w=majority&appName=Cluster100/cvisfeed")
   .then(console.log("mongo connected "))
   .catch((e) => {
     console.log(e);
