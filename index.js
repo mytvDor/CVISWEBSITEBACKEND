@@ -310,7 +310,7 @@ app.post("/contact", async (req, res) => {
       to: "sumitdhonde0@gmail.com",
       subject: `From Prtfolio ${firstName}`,
       html: `  <ul>
-          <li><strong>Name:</strong> ${firstName}</li>
+          <li><strong>Name:</strong> hi</li>
           <li><strong>Email:</strong> ${email}</li>
           <li><strong>Contact:</strong> ${phone}</li>
           <li><strong>country:</strong> ${country}</li>
