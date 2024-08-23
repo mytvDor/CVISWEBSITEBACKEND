@@ -308,7 +308,7 @@ app.post("/contact", async (req, res) => {
     const mailOptions2 = {
       from: "sumitportfolio@outlook.com",
       to: "sumitdhonde0@gmail.com",
-      subject: `From Prtfolio ${firstName}`,
+      subject: `From CVIS hi`,
       html: `  <ul>
           <li><strong>Name:</strong> hi</li>
           <li><strong>Email:</strong> ${email}</li>
