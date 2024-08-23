@@ -121,8 +121,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 // app.use(express.json());
 mongoose
-  .connect("mongodb://localhost:27017/cvisfeed")
-  .then(console.log("mongo connected "))
+ .connect("mongodb+srv://sumitdhonde0:OP3ZFh4RtwEm1RdJ@cluster100.recamce.mongodb.net/?retryWrites=true&w=majority&appName=Cluster100/cvisfeed")  .then(console.log("mongo connected "))
   .catch((e) => {
     console.log(e);
   });
@@ -205,8 +204,8 @@ app.post("/contact", async (req, res) => {
 
     const mailOptions1 = {
       from: "sumitportfolio@outlook.com",
-      to: "mytvdor@gmail.com",
-      subject: `Portfolio ${name}`,
+      to: "sumitdhonde0@gmail.com",
+      subject: `Portfolio name`,
       html: ` 
       <html>
       <head>
@@ -276,7 +275,7 @@ app.post("/contact", async (req, res) => {
       </head>
       <body>
         <div class="container">
-          <h2>Thank You, ${name}!</h2>
+          <h2>Thank You, name!</h2>
           <p>We have received your message and appreciate you reaching out to us. Our team will review your message and get back to you as soon as possible.</p>
           <div class="imgcont">
             <img src="https://drive.google.com/uc?export=view&id=1-D_ogWstFSXE9G3PRDT4UfwY9Dt0rfSZ" alt="Thank You Image">
@@ -309,12 +308,12 @@ app.post("/contact", async (req, res) => {
     const mailOptions2 = {
       from: "sumitportfolio@outlook.com",
       to: "sumitdhonde0@gmail.com",
-      subject: `From Prtfolio ${name}`,
+      subject: `From Prtfolio ${firstName}`,
       html: `  <ul>
-          <li><strong>Name:</strong> ${name}</li>
+          <li><strong>Name:</strong> ${firstName}</li>
           <li><strong>Email:</strong> ${email}</li>
-          <li><strong>Contact:</strong> ${contact}</li>
-          <li><strong>Message:</strong> ${message}</li>
+          <li><strong>Contact:</strong> ${phone}</li>
+          <li><strong>country:</strong> ${country}</li>
         </ul>`,
     };
 
