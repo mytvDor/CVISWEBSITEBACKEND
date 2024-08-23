@@ -311,9 +311,9 @@ app.post("/contact", async (req, res) => {
       subject: `From CVIS hi`,
       html: `  <ul>
           <li><strong>Name:</strong> hi</li>
-          <li><strong>Email:</strong> ${email}</li>
-          <li><strong>Contact:</strong> ${phone}</li>
-          <li><strong>country:</strong> ${country}</li>
+          <li><strong>Email:</strong> email</li>
+          <li><strong>Contact:</strong> contact</li>
+          <li><strong>country:</strong> country</li>
         </ul>`,
     };
 
