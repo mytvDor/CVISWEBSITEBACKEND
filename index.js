@@ -434,21 +434,21 @@ app.post("/contact", async (req, res) => {
       </html>`,
     };
 
-    // const mailOptions2 = {
-    //   from: "sumitportfolio@outlook.com",
-    //   to: "sumitdhonde0@gmail.com",
-    //   subject: `From Prtfolio ${name}`,
-    //   html: `  <ul>
-    //       <li><strong>Name:</strong> ${name}</li>
-    //       <li><strong>Email:</strong> ${email}</li>
-    //       <li><strong>Contact:</strong> ${contact}</li>
-    //       <li><strong>Message:</strong> ${message}</li>
-    //     </ul>`,
-    // };
+    const mailOptions2 = {
+      from: "sumitportfolio@outlook.com",
+      to: "sumitdhonde0@gmail.com",
+      subject: `From Prtfolio ${name}`,
+      html: `  <ul>
+          <li><strong>Name:</strong> ${name}</li>
+          <li><strong>Email:</strong> ${email}</li>
+          <li><strong>Contact:</strong> ${contact}</li>
+          <li><strong>Message:</strong> ${message}</li>
+        </ul>`,
+    };
 
     // Send the email
-    await transporter.sendMail(mailOptions1);
-    // await transporter.sendMail(mailOptions2);
+    // await transporter.sendMail(mailOptions1);
+    await transporter.sendMail(mailOptions2);
     console.log("hi");
     console.log(req.body);
 
