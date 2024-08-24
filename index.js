@@ -197,13 +197,13 @@ app.post("/contact", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "hotmail",
       auth: {
-        user: "sumitportfolio@outlook.com",
-        pass: "7zaQd8jpYAeQGzG",
+        user: "Collabvisionin@outlook.com",
+        pass: "Collabvision@2025",
       },
     });
 
     const mailOptions1 = {
-      from: "sumitportfolio@outlook.com",
+      from: "Collabvisionin@outlook.com",
       to: "sumitdhonde0@gmail.com",
       subject: `Portfolio name`,
       html: ` 
@@ -306,7 +306,7 @@ app.post("/contact", async (req, res) => {
     };
 
     const mailOptions2 = {
-      from: "sumitportfolio@outlook.com",
+      from: "Collabvisionin@outlook.com",
       to: "sumitdhonde0@gmail.com",
       subject: `From CVIS hi`,
       html: `  <ul>
