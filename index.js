@@ -310,10 +310,12 @@ app.post("/contact", async (req, res) => {
       to: "sumitdhonde0@gmail.com",
       subject: `From CVIS hi`,
       html: `  <ul>
-          <li><strong>Name:</strong> hi</li>
-          <li><strong>Email:</strong> email</li>
-          <li><strong>Contact:</strong> contact</li>
-          <li><strong>country:</strong> country</li>
+          <li><strong>Name:</strong> ${req.body.firstName} ${req.body.lastName}</li>
+          <li><strong>Email:</strong> ${req.body.email}</li>
+          <li><strong>Contact:</strong> ${req.body.phone}</li>
+          <li><strong>country:</strong> ${req.body.country}</li>
+                    <li><strong>message:</strong> ${req.body.message}</li>
+
         </ul>`,
     };
 
