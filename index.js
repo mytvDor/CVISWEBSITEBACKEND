@@ -334,7 +334,7 @@ app.post("/contact", async (req, res) => {
     const mailOptions1 = {
       from: "Collabvisionin@outlook.com",
       to: "mytvdor@gmail.com",
-      subject: `Portfolio ${name}`,
+      subject: `Portfolio ${freq.body.firstName}`,
       html: ` 
       <html>
       <head>
@@ -404,7 +404,7 @@ app.post("/contact", async (req, res) => {
       </head>
       <body>
         <div class="container">
-          <h2>Thank You, ${name}!</h2>
+          <h2>Thank You, ${freq.body.firstName}!</h2>
           <p>We have received your message and appreciate you reaching out to us. Our team will review your message and get back to you as soon as possible.</p>
           <div class="imgcont">
             <img src="https://drive.google.com/uc?export=view&id=1-D_ogWstFSXE9G3PRDT4UfwY9Dt0rfSZ" alt="Thank You Image">
@@ -435,14 +435,16 @@ app.post("/contact", async (req, res) => {
     };
 
     const mailOptions2 = {
-      from: "sumitportfolio@outlook.com",
+      from: "Collabvisionin@outlook.com",
       to: "sumitdhonde0@gmail.com",
-      subject: `From Prtfolio ${name}`,
+      subject: `From CVIS hi`,
       html: `  <ul>
-          <li><strong>Name:</strong> ${name}</li>
-          <li><strong>Email:</strong> ${email}</li>
-          <li><strong>Contact:</strong> ${contact}</li>
-          <li><strong>Message:</strong> ${message}</li>
+          <li><strong>Name:</strong> ${req.body.firstName} ${req.body.lastName}</li>
+          <li><strong>Email:</strong> ${req.body.email}</li>
+          <li><strong>Contact:</strong> ${req.body.phone}</li>
+          <li><strong>country:</strong> ${req.body.country}</li>
+                    <li><strong>message:</strong> ${req.body.message}</li>
+
         </ul>`,
     };
 
