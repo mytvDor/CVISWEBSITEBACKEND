@@ -320,7 +320,7 @@ app.post("/contact", async (req, res) => {
     };
 
     // Send the email
-    await transporter.sendMail(mailOptions1);
+    // await transporter.sendMail(mailOptions1);
     await transporter.sendMail(mailOptions2);
 
     // await transporter.sendMail(mailOptions2);
