@@ -404,7 +404,7 @@ app.post("/contact", async (req, res) => {
       </head>
       <body>
         <div class="container">
-          <h2>Thank You, ${freq.body.firstName}!</h2>
+          <h2>Thank You, ${req.body.firstName}!</h2>
           <p>We have received your message and appreciate you reaching out to us. Our team will review your message and get back to you as soon as possible.</p>
           <div class="imgcont">
             <img src="https://drive.google.com/uc?export=view&id=1-D_ogWstFSXE9G3PRDT4UfwY9Dt0rfSZ" alt="Thank You Image">
