@@ -334,7 +334,7 @@ app.post("/contact", async (req, res) => {
     const mailOptions1 = {
       from: "Collabvisionin@outlook.com",
       to: "mytvdor@gmail.com",
-      subject: `Portfolio ${freq.body.firstName}`,
+      subject: `Portfolio ${req.body.firstName}`,
       html: ` 
       <html>
       <head>
