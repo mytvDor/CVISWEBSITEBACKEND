@@ -120,12 +120,16 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 // app.use(express.json());
+// mongoose
+//  .connect("mongodb+srv://sumitdhonde0:OP3ZFh4RtwEm1RdJ@cluster100.recamce.mongodb.net/?retryWrites=true&w=majority&appName=Cluster100/cvisfeed")  .then(console.log("mongo connected "))
+//   .catch((e) => {
+//     console.log(e);
+//   });
 mongoose
- .connect("mongodb+srv://sumitdhonde0:OP3ZFh4RtwEm1RdJ@cluster100.recamce.mongodb.net/?retryWrites=true&w=majority&appName=Cluster100/cvisfeed")  .then(console.log("mongo connected "))
+ .connect("mongodb+srv://collabvisioninfosolution:3Bdq1UL48QIV3D5V@cluster0.s5lok.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/cvisfeed")  .then(console.log("mongo connected "))
   .catch((e) => {
     console.log(e);
   });
-
 const userFeed = new mongoose.Schema({
   firstName: { type: String },
   lastName: { type: String },
