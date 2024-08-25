@@ -119,7 +119,7 @@ const corsOptions = {
   credentials: true,
 };
 app.use(cors(corsOptions));
-// app.use(express.json());
+app.use(express.json());
 // mongoose
 //  .connect("mongodb+srv://sumitdhonde0:OP3ZFh4RtwEm1RdJ@cluster100.recamce.mongodb.net/?retryWrites=true&w=majority&appName=Cluster100/cvisfeed")  .then(console.log("mongo connected "))
 //   .catch((e) => {
