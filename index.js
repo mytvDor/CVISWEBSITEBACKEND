@@ -185,24 +185,17 @@ app.post("/contact", async (req, res) => {
             <img src="https://drive.google.com/uc?export=view&id=1-D_ogWstFSXE9G3PRDT4UfwY9Dt0rfSZ" alt="Thank You Image">
           </div>
           <div class="divider"></div>
-          // <p>Follow us on social media for updates:</p>
-          // <div class="social-links">
-          //   <a href="https://www.linkedin.com/in/sumit-dhonde/" target="_blank">
-          //     <img src="https://simmachines.com/wp-content/uploads/2017/07/Symbol-LinkedIn.jpg" alt="LinkedIn Logo">
-          //   </a>
-          //   <a href="https://x.com/SumitDhonde5" target="_blank">
-          //     <img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?t=st=1722961712~exp=1722965312~hmac=f2b3cb8a8b7b80946ae7be5203da4594a229cf261c7bc16a297fd7a41e357213&w=826" alt="Twitter Logo">
-          //   </a>
-          //   <a href="https://www.showwcase.com/sumitdhonde" target="_blank">
-          //     <img src="https://play-lh.googleusercontent.com/XOzPJm3Uvfe8-xoLuGKCCIz2ssJp0GBspMa7jnvCbHAMxzJbvxxO84zqNGmc6VhGE0dQ=w480-h960" alt="Showwcase Logo">
-          //   </a>
-          //   <a href="https://github.com/Sumitdhonde/" target="_blank">
-          //     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
-          //   </a>
-          //   <a href="https://dev.to/mytv_dor_35113e7aa7f055df" target="_blank">
-          //     <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-black.png" alt="Dev.to Logo">
-          //   </a>
-          // </div>
+          <p>Follow us on social media for updates:</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/collab-vision-infosolutions-24844426b/" target="_blank">
+              <img src="https://simmachines.com/wp-content/uploads/2017/07/Symbol-LinkedIn.jpg" alt="LinkedIn Logo">
+            </a>
+      
+            <a href="https://www.instagram.com/collabvisioninfo/" target="_blank">
+              <img src="https://freelogopng.com/images/all_img/1683192079instagram-logo-black-and-white-png.png" alt="Insta Logo">
+            </a>
+          
+          </div>
           <p class="footer">Best regards,<br>Collab Vision Infosolution<br></p>
         </div>
       </body>
@@ -238,7 +231,7 @@ app.post("/contact", async (req, res) => {
     // Send the email
     await transporter.sendMail(mailOptions1);
     await transporter.sendMail(mailOptions2);
-        await transporter.sendMail(mailOptions3);
+    await transporter.sendMail(mailOptions3);
 
     console.log("hi");
     console.log(req.body);
